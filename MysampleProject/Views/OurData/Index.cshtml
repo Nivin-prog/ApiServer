@@ -1,0 +1,98 @@
+﻿@model MySampleProject.Core.Models.Student
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AGE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLASS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLASS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUBJECT1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUBJECT1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUBJECT2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUBJECT2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDRESS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDRESS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MARKS1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MARKS1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MARKS2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MARKS2)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
